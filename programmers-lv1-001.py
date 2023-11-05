@@ -6,8 +6,8 @@ def solution(left, right):
             if left%i ==0: #i가 left로 나누어 떨어진다면
                 count +=1 #약수의 개수 +1
         if count%2==0: #약수의 개수 홀짝 검사
-            answer +=left #짝수라면 더하고
+            answer +=left #짝수
         else:
-            answer -=left #홀수면 뺀다.
+            answer -=left #홀수
         left +=1
     return answer
